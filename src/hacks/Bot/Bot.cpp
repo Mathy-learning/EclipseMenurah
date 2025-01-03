@@ -26,8 +26,8 @@ namespace eclipse::hacks::Bot {
                 if (!result)
                     return;
 
-                s_bot.save(Mod::get()->getSaveDir() / "replays" / (name + ".gdr"));
-                config::set("bot.selectedreplay", Mod::get()->getSaveDir() / "replays" / (name + ".gdr"));
+                s_bot.save(Mod::get()->getSaveDir() / "replays" / (name + ".dgr"));
+                config::set("bot.selectedreplay", Mod::get()->getSaveDir() / "replays" / (name + ".dgr"));
             },
             i18n::get_("common.create"),
             i18n::get_("common.cancel"),
